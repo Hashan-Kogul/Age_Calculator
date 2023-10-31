@@ -1,0 +1,228 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: #D2E9E9;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 41em;
+    min-width: 18em;
+    background-color: #4D4C7D;
+    padding: 3em;
+    margin: 0 2em;
+    border-radius: 2em 2em 12em 2em;
+}
+
+.inputs {
+    display: flex;
+    column-gap: 2em;
+}
+
+input[type='number'] {
+    padding: 10px 15px;
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 1.5em;
+    color: black;
+    font-weight: 700;
+    border-radius: 0.4em;
+    border: 1px solid hsl(0, 0%, 86%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+.day-input,
+.month-input,
+.year-input {
+    max-width: 9.3em;
+    min-width: 6.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+.error-day,
+.error-month,
+.error-year {
+    color: hsl(0, 100%, 67%);
+    opacity: 0;
+}
+
+label {
+    font-size: 0.7em;
+    letter-spacing: 0.4em;
+}
+
+span {
+    font-size: 0.8em;
+}
+
+label,
+::placeholder {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: hsl(0, 1%, 44%);
+}
+
+.line {
+    margin-top: 2.5em;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+}
+
+.middle {
+    position: relative;
+}
+
+.calAge {
+    height: 3.5em;
+    width: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #1B9C85;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    color: rgb(212, 207, 207);
+    margin-top: 10px;
+}
+.calAge:hover{
+    background-color:#50c7b1 ;
+}
+.Clear {
+    height: 3.5em;
+    width: 10em;
+    color: rgb(212, 207, 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #1B9C85;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    margin-top: -45px;
+    margin-left: 230px;
+}
+.Clear:hover{
+    background-color:#50c7b1 ;
+}
+.result {
+    display: flex;
+    align-items: center;
+    color: #F99417;
+    font-size: 2em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.result > span {
+    font-size: 2em;
+    font-weight: 800;
+    font-style: italic;
+}
+
+i {
+    color: black;
+    font-size: 2em;
+    font-weight: 800;
+    margin-left: 0.3em;
+}
+
+@media(max-width: 768px) {
+    main{
+        margin-top:200px;
+        width:500px;
+    }
+    .container {
+        padding: 2em;
+    }
+    .inputs {
+      margin-top:100px;  
+    }
+    .day-input,
+    .month-input,
+    .year-input {
+        min-width: 1em;
+        padding: 1em;
+    }
+    #day,
+    #month,
+    #year {
+        min-width: 2.7em;
+    }
+    .error {
+        font-size: 0.6em;
+    }
+    .line {
+        margin: 2em 0 4em 0;
+    }
+    .result {
+        font-size: 1em;
+    }
+    footer {
+        margin-bottom:-221px !important;
+    } 
+    .middle {
+        flex-direction: column; /* Stack buttons vertically */
+    }
+    .circle {
+        width: 3em;
+        height: 3em;
+        top: -1.5em;
+        right: 0;
+    }
+    .calAge,
+    .Clear {
+        width: 40%; /* Expand buttons to full width */
+        margin: 10px 0; /* Add space between buttons */
+    }
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 1em;
+    text-align: center;
+}
+.welcome-heading {
+    font-size: 24px;
+    color: #007BFF;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.welcome-subtext {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+.social {
+    display: flex;
+}
+
+.circle {
+    width: 40px; /* Adjust the size as needed */
+    height: 40px; /* Adjust the size as needed */
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 10px; /* Adjust the margin as needed */
+    border: 1.6px solid #ffbd39;
+}
+
+.icon {
+    /* Add specific styles here for the icon */
+    color: #333;
+    font-size: 24px;
+}
